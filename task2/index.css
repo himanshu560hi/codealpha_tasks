@@ -1,0 +1,20 @@
+.cnt{
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(images/bg-image.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+}
+#search-field{
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: 22px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.single-result{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
