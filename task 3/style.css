@@ -1,0 +1,105 @@
+:root {
+    --bg: #fefefe;
+    --text: #222;
+    --card: #ffffff;
+    --accent: #6c63ff;
+  }
+  
+  body.dark {
+    --bg: #1e1e2f;
+    --text: #f1f1f1;
+    --card: #2a2a3c;
+    --accent: #ff6b6b;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+  }
+  
+  .app {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  #themeToggle {
+    background: none;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input, button {
+    padding: 12px;
+    margin: 10px 5px 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  input {
+    width: calc(33% - 10px);
+    background: #f0f0f0;
+  }
+  
+  button {
+    background-color: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .search-section input {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card h3 {
+    margin: 0;
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+  }
+  
+  .borrow-btn {
+    margin-top: 10px;
+    background: #00b894;
+  }
+  
